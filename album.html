@@ -18,6 +18,7 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
 
         .photo img {
@@ -44,6 +45,10 @@
         .photo-frame:hover .photo-detail {
             display: block;
             background-color: rgb(168, 152, 110, 0.5);
+        }
+        .photo-frame:hover .photo{
+            transform: scale(1.5) skew(-30deg);
+            transition: transform 2s ease-in-out;
         }
     </style>
 </head>
